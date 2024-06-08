@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Sora';
+  src: url('../public/assets//fonts/Sora.ttf');
+}
+
+.hero-section {
+  background-image: url('../public/assets/img/mande-network-1@2x.png');
+  /* background-size: cover;
+  background-attachment: fixed; */
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-white to-[#B3C1DE];
+  }
+}
