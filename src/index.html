@@ -6,58 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"
     />
     <link href="./output.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/assets/img/icons/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../public/assets/img/icons/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../public/assets/img/icons/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
     <title>
       Mande Network
     </title>
   </head>
   
-  <body class="bg-[#0D0E10] w-screen font-sora flex flex-col  text-[#B3C0DE]">
+  <body class="bg-[#0D0E10] w-screen font-sora flex flex-col  text-textPrimary">
+    <header class="hero-section ">
+
     <nav class="w-full flex flex-col py-4 items-center">
       <div class="container flex max-w-[90%] justify-between items-center">
         <img class="h-10" src="../public/assets/img/logo1.svg" alt="Logo" />
         <div class="hidden md:flex space-x-4">
-          <ul class="list flex items-center gap-4">
+          <ul class="list flex items-center gap-10 tracking-wider">
             <li class="listItemContainer flex items-center gap-2">
               <div class="itemText">
                 Ecosystem
               </div>
-              <img height="20" width="20" src="../public/assets/img/iconsarrow-1.svg"
+              <img height="20" width="20" src="../public/assets/img//chevron-directionup.svg"
               class="itemText" alt="Arrow" />
             </li>
             <li class="listItemContainer flex items-center gap-2">
               <div class="itemText">
-                Ecosystem
+                Network
               </div>
-              <img height="20" width="20" src="../public/assets/img/iconsarrow-1.svg"
+              <img height="20" width="20" src="../public/assets/img//chevron-directionup.svg"
               class="itemText" alt="Arrow" />
             </li>
             <li class="listItemContainer flex items-center gap-2">
               <div class="itemText">
-                Ecosystem
+                Social
               </div>
-              <img height="20" width="20" src="../public/assets/img/iconsarrow-1.svg"
+              <img height="20" width="20" src="../public/assets/img//chevron-directionup.svg"
               class="itemText" alt="Arrow" />
             </li>
           </ul>
         </div>
-        <div class="flex items-center space-x-4">
-          <button class="primary-btn flex items-center">
+        <div class="flex items-center space-x-4 tracking-wide">
+          <button class="primary-btn  text-[#04154D] ">
             Join Discord
             <img height="20" width="20" src="../public/assets/img/iconssocialsdiscord.svg"
             alt="Discord" />
           </button>
-          <button class="secondary-btn hidden md:flex">
+          <button class="secondary-btn tracking-wide text-textPrimary hidden md:flex ">
             Testnet
           </button>
         </div>
         <div class="md:hidden flex items-center">
           <button id="menu-btn" class="text-white focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7">
-              </path>
-            </svg>
+           <img src="../public/assets/img/iconsburger.svg" alt="">
           </button>
         </div>
       </div>
@@ -76,34 +77,38 @@
         </a>
       </div>
     </nav>
-    <header class="hero-section h-screen flex justify-center bg-cover bg-center bg-no-repeat   w-screen ">
-      <div class="container px-4 md:max-w-[90%] max-h-[80%] md:max-h-[80%] flex flex-col justify-center">
-        <h1 class="text-[42px] md:text-[84px] font-bold mb-4">
+      
+      <div class="header-main-hero h-screen flex justify-center bg-cover bg-center bg-no-repeat   w-screen">
+
+      <div class="container px-4 md:px-0 md:max-w-[90%] max-h-[80%] md:max-h-[80%] flex flex-col justify-center">
+        <h1 class="text-[48px] md:leading-[90px] md:text-[84px] font-semibold mb-4 md:mb-6">
           Credibility
           <br />
-          hub for Web 3
+          hub for Web3
         </h1>
-        <p class="text-[16px] md:text-[20px] w-[50%] mb-8">
+        <p class="text-[16px] md:text-[20px] w-[90%] md:w-[45%] mb-16 md:mb-16 tracking-wide ">
           Dymension RollApp, as an open on chain reputation layer on Web3. To record
           credit scores, ratings, activities, reputation, and digital identity accomplishments.
         </p>
         <div class="flex items-center space-x-4">
-          <button class="primary-btn flex items-center">
+          <button class="primary-btn flex items-center text-[#04154D]">
             Join Discord
             <img height="20" width="20" src="../public/assets/img/iconssocialsdiscord.svg"
             alt="Discord" />
           </button>
-          <button class="secondary-btn">
+          <button class="secondary-btn tracking-wide">
             Testnet
           </button>
         </div>
       </div>
+            </div>
+
     </header>
     <!-- Main Content -->
     <main class="main-container mt-8 flex flex-col items-center gap-[100px] ">
       <section class="motto-container flex flex-col gap-6  w-[90%] md:flex md:flex-row ">
-        <div class="motto-left-container w-full rounded-[15px] border-[0.5px] border-opacity-40  border-secondary  py-[48px] px-4 flex flex-col items-center text-center text-textPrimary shadow-[inset_-12px_-8px_40px_#46464620] shadow-gray-800   md:w-[60%]">
-          <div class="motto-left-heading-text hidden md:block text-[48px] md:text-[48px] mb-[8px] font-semibold leading-normal">
+        <div class="motto-left-container w-full rounded-[15px] border-[0.5px] border-opacity-40  border-secondary  py-[60px] px-4 flex flex-col items-center text-center text-textPrimary shadow-[inset_-12px_-8px_40px_#46464620] shadow-gray-800  justify-center md:w-[60%]">
+          <div class="motto-left-heading-text hidden md:block text-[48px] md:text-[48px] mb-[8px] font-semibold leading-tight">
             I am because
             <br/>
             you are.
@@ -115,14 +120,12 @@
             <br/>
             you are.
           </div>
-          <div class="motto-left-description text-[20px] md:text-[24px] font-light md:font-normal md:mt-[-20px]">
-            Our vision is to build
-            <br/>
-            Web3 for the people
+          <div class="motto-left-description text-[20px] md:text-[24px] font-light md:font-normal md:w-[40%] ">
+            Our vision is to build Web3 for the people
           </div>
         </div>
         <div class="motto-right-container  w-full rounded-[15px] border-[0.5px] border-opacity-40  border-secondary shadow-[inset_-12px_-8px_40px_#46464620] shadow-gray-800   py-[48px] px-4 flex flex-col  text-center text-textPrimary gap-10 items-center justify-center md:w-[40%] md:text-start ">
-          <div class="md:w-[70%] h-full flex flex-col justify-center md:items-center  gap-10 font-light ">
+          <div class="md:w-[60%] h-full flex flex-col justify-center md:items-center  gap-10 font-light ">
             <div class="motto-right-text-container flex flex-col gap-4 text-[16px] md:text-[20px]  text-wrap">
               <div class="motto-right-primary-text">
                 Our network, inspired by Ubuntu philosophy, invests in you with our tokens.
@@ -143,19 +146,19 @@
         </div>
       </section>
       <section class="poc-container flex  flex-col   w-[90%] gap-4   md:flex-row md:items-center md:justify-center">
-        <div class="poc-left-main-container h-[618px] max-h-[360px]  flex flex-col items-start justify-between px-6 py-10  shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px]  border-secondary  shadow-gray-800 md:max-h-[618px] md:w-[45%]">
+        <div class="poc-left-main-container h-[618px] max-h-[360px]  flex flex-col items-start justify-between px-8 py-10 pb-[60px]  shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px]  border-secondary  shadow-gray-800 md:max-h-[618px] md:w-[45%]">
           <div class="poc-top-container text-textPrimary flex flex-col gap-4">
             <div class="poc-heading-text font-semibold  md:text-[40px] md:leading-tight text-[26px]">
               Proof of
               <br/>
               Credibility SDK
             </div>
-            <div class="poc-description-text text-[14px] md:text-[16px] md:tracking-wide">
+            <div class="poc-description-text text-[14px] md:text-[16px] md:tracking-wide w-[80%]">
               The Proof of Credibility SDK enables developers to integrate decentralized
               reputation systems into their DAPPs, fostering trust through the following:
             </div>
           </div>
-          <div class="poc-bottom-container-btn w-fit flex gap-2 border-b-[1px] pb-[2px] border-secondary  md:self-start self-start">
+          <div class="poc-bottom-container-btn w-fit flex gap-2 border-b-[2px] pb-[2px] border-secondary items-center md:self-start self-start">
             <div class="poc-bottom-container-text  font-bold text-secondary">
               Explore Docs
             </div>
@@ -193,7 +196,7 @@
               <div class="poc-col-2-row-1-heading text-[18px] font-semibold my-2 md:text-[20px]">
                 On-chain Credentials
               </div>
-              <div class="poc-col-2-row-1-description text-[12px] md:text-[14px] md:tracking-wide md:w-[70%]">
+              <div class="poc-col-2-row-1-description text-[12px] md:text-[14px] md:tracking-wide md:w-[60%]">
                 Let's users prove their web2 credentials in web3 using ZK proofs.
               </div>
             </div>
@@ -210,134 +213,165 @@
           </div>
         </div>
       </section>
-      <section class="technology-container flex  w-[90%] ">
-        <div class="technology-container-left-container">
-          Technology on Mande Network
+      <section class="technology-container  w-[90%] flex flex-col gap-6 md:flex-row md:flex relative ">
+        <div class="technology-container-left-container md:text-[40px]  text-[26px] font-bold text-textPrimary z-10 md:w-[40%]">
+          Technology on <br/> Mande Network
         </div>
-        <div class="technology-container-right-container">
-          <ul>
-            <li class='flex'>
-              <div class="techonology-item-left-container">
-                <img class="techonology-item-left-icon" src=''>
+        <div class="rounded-[407px] bg-[#04154D] opacity-1 blur-[225.9px] h-full w-full inset-0 absolute "></div>
+
+        <div class="technology-container-right-container md:flex-1 md:w-[60%] z-10">
+          <ul class='gap-10 md:gap-0 py-4 md: md:flex-col'>
+            <li class='flex flex-col  gap-10  md:flex md:flex-row border-t-[1px]  border-[#636467]  border-opacity-50 py-8 items-start'>
+              <div class="techonology-item-left-container    flex gap-2 md:w-[40%]">
+                <img class="techonology-item-left-icon w-8" src='../public/assets/img/iconsid.svg'>
                 </img>
-                <div class="techonology-item-name">
+                <div class="techonology-item-name font-semibold capitalize text-[24px] text-textPrimary">
                   Decentralised Identity
                 </div>
               </div>
-              <div class="techonology-item-description">
+              <div class="techonology-item-description text-textPrimary font-light leading-normal text-[14px] tracking-wide md:w-[60%] w-[90%]">
                 Mande consolidates users' multiple wallets and reputation data from various
                 apps using DIDs for decentralised identity, in accordance with W3C specifications
                 on DiDs and VCs.
               </div>
             </li>
-            <li class='flex'>
-              <div class="techonology-item-left-container">
-                <img class="techonology-item-left-icon" src=''>
+
+
+<li class='flex flex-col  gap-10  md:flex md:flex-row border-t-[1px]  border-[#636467]  border-opacity-50 py-8 items-start'>
+              <div class="techonology-item-left-container    flex gap-2 md:w-[40%]">
+                <img class="techonology-item-left-icon w-8" src='../public/assets/img/iconsinvi.svg'>
                 </img>
-                <div class="techonology-item-name">
+                <div class="techonology-item-name font-semibold capitalize text-[24px] text-textPrimary">
                   ZK Credentials
                 </div>
               </div>
-              <div class="techonology-item-description">
+              <div class="techonology-item-description text-textPrimary font-light leading-normal text-[14px] tracking-wide md:w-[60%] w-[90%]">
                 Mande uses ZK proofs for users to submit verifiable credentials without
                 disclosing sensitive information, like proving they are over 18 without
                 revealing their exact age.
               </div>
             </li>
-            <li class='flex'>
-              <div class="techonology-item-left-container">
-                <img class="techonology-item-left-icon" src=''>
+<li class='flex flex-col  gap-10  md:flex md:flex-row border-t-[1px]  border-[#636467]  border-opacity-50 py-8 items-start'>
+              <div class="techonology-item-left-container    flex gap-2 md:w-[40%]">
+                <img class="techonology-item-left-icon w-8" src='../public/assets/img/iconslock.svg'>
                 </img>
-                <div class="techonology-item-name">
+                <div class="techonology-item-name font-semibold capitalize text-[24px] text-textPrimary">
                   Soul Bound Tokens
                 </div>
               </div>
-              <div class="techonology-item-description">
-                Soul-bound tokens on the Mande blockchain are like non-transferable NFTs.
+              <div class="techonology-item-description text-textPrimary font-light leading-normal text-[14px] tracking-wide md:w-[60%] w-[90%]">
+               Soul-bound tokens on the Mande blockchain are like non-transferable NFTs.
                 They represent public community attestations minted on-chain.
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="community-container   w-[90%]">
-        <div class="community-container-heading-container">
+      <section class="community-container   w-[90%] relative">
+         <div class="rounded-[607px] bg-[#04154D] opacity-30 blur-[225.9px] h-full w-full inset-0  "></div>
+
+        <div class="community-container-heading-container md:text-[40px]  text-[26px] font-bold text-textPrimary md:text-center w-[50%] md:w-full ">
           Join our community
         </div>
-        <div class="community-cards-container flex">
-          <div class="community-cards-container-card">
-            <img class="community-cards-container-card-icon" src=''>
+      
+        <div class="community-cards-container flex overflow-x-scroll md:overflow-x-auto gap-10 py-10 w-full justify-between z-10 ">
+         
+          <div class="community-cards-container-card shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center text-center  border-secondary px-2 py-6 shadow-gray-800 max-w-[281px]    ">
+            <img class="community-cards-container-card-icon h-16 w-16 md:h-20 md:w-20" src='../public/assets/img/materialsymbolshandshake.svg'>
             </img>
-            <div class="community-cards-container-card-title">
-              Explore proof of credibility
+            <div class="community-cards-container-card-title text-[18px] font-semibold my-2 md:text-[20px] w-screen max-w-[281px] text-textPrimary">
+              Explore proof of <br/> credibility
             </div>
-            <div class="community-cards-container-card-description">
+            <div class="community-cards-container-card-description text-[12px] md:text-[14px] md:tracking-wide w-[70%]">
               Explore proof-of-credibility SDK to solve for trust on your DAPPs.
             </div>
           </div>
-          <div class="community-cards-container-card">
-            <img class="community-cards-container-card-icon" src=''>
+
+
+           <div class="community-cards-container-card shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center text-center  border-secondary px-2 py-6 shadow-gray-800 flex-1 max-w-[281px]    ">
+            <img class="community-cards-container-card-icon h-16 w-16 md:h-20 md:w-20" src='../public/assets/img/majesticonscodeblock.svg'>
             </img>
-            <div class="community-cards-container-card-title">
-              Build on Mande
+            <div class="community-cards-container-card-title text-[18px] font-semibold my-2 md:text-[20px] w-screen max-w-[281px] text-textPrimary">
+              Build on Mande <br/> Mande
             </div>
-            <div class="community-cards-container-card-description">
+            <div class="community-cards-container-card-description text-[12px] md:text-[14px] md:tracking-wide w-[70%]">
               Disrupt decentralised marketplaces using human trust.
             </div>
           </div>
-          <div class="community-cards-container-card">
-            <img class="community-cards-container-card-icon" src=''>
+
+
+      
+
+           <div class="community-cards-container-card shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center text-center  border-secondary px-2 py-6 shadow-gray-800 flex-1 max-w-[281px]    ">
+            <img class="community-cards-container-card-icon h-16 w-16 md:h-20 md:w-20" src='../public/assets/img/solarshieldupbold.svg'>
             </img>
-            <div class="community-cards-container-card-title">
-              Become a fault prover
+            <div class="community-cards-container-card-title text-[18px] font-semibold my-2 md:text-[20px] w-screen max-w-[281px] text-textPrimary">
+              Become a fault <br/> prover
             </div>
-            <div class="community-cards-container-card-description">
+            <div class="community-cards-container-card-description text-[12px] md:text-[14px] md:tracking-wide w-[70%]">
               Help secure Mande by becoming a credible fault prover
             </div>
           </div>
-          <div class="community-cards-container-card">
-            <img class="community-cards-container-card-icon" src=''>
+
+
+      
+         
+           <div class="community-cards-container-card shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center text-center  border-secondary px-2 py-6 shadow-gray-800 flex-1 max-w-[281px]   backdrop-blur-2xl  ">
+            <img class="community-cards-container-card-icon h-16 w-16 md:h-20 md:w-20" src='../public/assets/img/octiconfeedstar16.svg'>
             </img>
-            <div class="community-cards-container-card-title">
-              Issue credibility
+            <div class="community-cards-container-card-title text-[18px] font-semibold my-2 md:text-[20px] w-screen max-w-[281px] text-textPrimary">
+              Issue <br/> credibility
             </div>
-            <div class="community-cards-container-card-description">
+            <div class="community-cards-container-card-description text-[12px] md:text-[14px] md:tracking-wide w-[70%]">
               Become a Credibility issuer by signing up as a DAO on Mande
             </div>
           </div>
+
+
+     
         </div>
       </section>
-      <section class="mandela-ethos-container w-[90%]">
-        <div class="mandela-ethos-left-container">
-          <div class="mandela-ethos-left-heading">
+      <section class="mandela-ethos-container w-[90%] text-textPrimary flex flex-col md:flex-row md:items-center">
+        <div class="mandela-ethos-left-container flex flex-col gap-10 relative">
+          <div class="mandela-ethos-left-heading text-[26px] font-semibold text-textPrimary hidden md:block md:text-[40px]">
+            We share Mandela’s ethos in <br/> making Web3 equitable
+          </div> <div class="mandela-ethos-left-heading text-[26px] font-semibold text-textPrimary md:text-[40px] md:hidden">
             We share Mandela’s ethos in making Web3 equitable
           </div>
-          <div class="mandela-ethos-left-quote-container ">
-            <div class="mandela-ethos-left-quote-text">
+            <div class="rounded-[453.471px] bg-[#B3C0DE] opacity-40 blur-[225.9px] h-[500px] w-full  md:hidden absolute top-0 left-0"></div>
+            <img class="mandela-ethos-right-container-img md:hidden relative z-10" src='../public/assets/img/mandela1@2x.png'>
+          </img>
+         <div class="mandela-words-container flex flex-col gap-8 md:gap-16">
+
+          <div class="mandela-ethos-left-quote-container flex flex-col gap-[2px] ">
+            <div class="mandela-ethos-left-quote-text font-semibold text-[20px] md:text-[24px]">
               I Am Prepared to Die
             </div>
-            <div class="mandela-ethos-left-quote-details">
+            <div class="mandela-ethos-left-quote-details text-[12px] md:text-[14px]">
               Nelson Mandela, 20th April 1964
             </div>
           </div>
-          <div class="mandela-ethos-left-bottom-quote-container flex">
-            <div class="mandela-ethos-left-bottom-quote">
+          <div class="mandela-ethos-left-bottom-quote-container flex flex-col gap-2 md:gap-8 md:flex-row md:w-[70%]">
+            <div class="mandela-ethos-left-bottom-quote text-[12px] tracking-wide  md:text-[14px] w-[80%] leading-relaxed">
               I have cherished the ideal of a democratic and free society in which all
               persons will live together in harmony and with equal opportunities.
             </div>
-            <div class="mandela-ethos-left-bottom-quote">
+            <div class="mandela-ethos-left-bottom-quote text-[12px] tracking-wide  md:text-[14px] w-[80%] leading-relaxed">
               It is an ideal for which I hope to live for and to see realized. But,
               My Lord, if it needs to be, it is an ideal for which I am prepared to die.
             </div>
           </div>
+         </div>
+
         </div>
-        <div class="mandela-ethos-right-container">
-          <img class="mandela-ethos-right-container-img" src=''>
+        <div class="mandela-ethos-right-container-img-big relative ">
+          <div class="rounded-[453.471px] bg-[#B3C0DE] opacity-40 blur-[225.9px] h-[500px] w-full hidden md:block absolute top-0 left-0"></div>
+          <img class="mandela-ethos-right-container-img hidden md:block relative z-10" src='../public/assets/img/mandela1@2x.png'>
           </img>
         </div>
       </section>
       <section class="team-container w-[90%] flex flex-col gap-6 md:flex-row md:flex  ">
-        <div class="team-left-containerflex-1 text-[26px] font-bold text-textPrimary md:w-[25%]">
+        <div class="team-left-container text-[26px] md:text-[40px] font-bold text-textPrimary md:w-[25%]">
           Our team
         </div>
         <div class="team-right-container   md:flex-1 md:w-[75%]">
@@ -346,7 +380,7 @@
               <div class="team-item-left-main-container w-screen  flex gap-10 md:w-[30%]  ">
                 <img class="team-item-left-img object-cover  h-[100px] w-[100px]" src='../public/assets/img/1-1@2x.png'>
                 </img>
-                <div class="team-detail">
+                <div class="team-detail flex-shrink-0">
                   <div class="name font-semibold capitalize text-xl text-textPrimary ">
                     sandeep m
                   </div>
@@ -355,7 +389,7 @@
                   </div>
                 </div>
               </div>
-              <div class="team-intro text-textPrimary font-light leading-normal text-[14px] tracking-wide md:w-[70%] w-[90%]">
+              <div class="team-intro text-textPrimary font-light leading-normal text-[14px] tracking-wide md:w-[70%] w-[90%] ">
                 Having over 10 years of entrepreneurial experience founding three companies,
                 I have always believed in the potential of people. It's my vision to build
                 a network of individuals who can collectively rebuild society from the
@@ -367,7 +401,7 @@
               <div class="team-item-left-main-container w-screen  flex gap-10 md:w-[30%] ">
                 <img class="team-item-left-img object-cover h-[100px] w-[100px]" src='../public/assets/img/1-1-1@2x.png'>
                 </img>
-                <div class="team-detail">
+                <div class="team-detail flex-shrink-0">
                   <div class="name font-semibold capitalize text-xl text-textPrimary ">
                     pratik agarwal
                   </div>
@@ -386,12 +420,12 @@
               <div class="team-item-left-main-container w-screen  flex gap-10 md:w-[30%]">
                 <img class="team-item-left-img object-cover h-[100px] w-[100px]" src='../public/assets/img/1-1-21@2x.png'>
                 </img>
-                <div class="team-detail">
+                <div class="team-detail flex-shrink-0">
                   <div class="name font-semibold capitalize text-xl text-textPrimary ">
                     alani kuye
                   </div>
                   <div class="role border-[1px] rounded-full text-center px-2 py-1 border-[#C5C7CD] border-opacity-20 capitalize mt-[4px]">
-                    advisor
+                    Co-founder
                   </div>
                 </div>
               </div>
@@ -407,7 +441,7 @@
               <div class="team-item-left-main-container w-screen  flex gap-10 md:w-[30%]">
                 <img class="team-item-left-img object-cover h-[100px] w-[100px]" src='../public/assets/img/1-1-31@2x.png'>
                 </img>
-                <div class="team-detail">
+                <div class="team-detail flex-shrink-0">
                   <div class="name font-semibold capitalize text-xl text-textPrimary ">
                     deepanshu tripathi
                   </div>
@@ -437,7 +471,7 @@
             just chat with us!
           </p>
         </div>
-        <div class="discord-right-container flex justify-between  items-center rounded-[15px] border-[0.5px] border-opacity-40  md:w-[25%]  border-secondary  py-[40px] md:flex-col md:justify-center md:gap-[30px] md:px-[50px] px-[20px]    md:items-start bg-card-bg-radial-blue">
+        <div class="discord-right-container flex justify-between  items-center rounded-[15px] border-[0.5px] border-opacity-40  md:w-[25%]  border-secondary  py-[40px] md:flex-col md:justify-center md:gap-[30px] md:px-[50px] px-[20px] gap-4   md:items-start bg-card-bg-radial-blue">
           <div class="discord-right-top-container w-full flex items-center">
             <img class="team-item-left-img" src='../public/assets/img/discordVector.svg'>
             </img>
@@ -535,5 +569,4 @@
     <script src="./script.js">
     </script>
   </body>
-
 </html>

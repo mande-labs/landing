@@ -6,11 +6,56 @@
   font-family: 'Sora';
   src: url('../public/assets//fonts/Sora.ttf');
 }
+:root {
+  --primary-color: #04154d;
+  --secondary-color: #b3c0de;
+  --text-accent: #274cbf;
+}
 
 .hero-section {
   background-image: url('../public/assets/img/mande-network-1@2x.png');
-  /* background-size: cover;
-  background-attachment: fixed; */
+  object-fit: scale-down;
+  background-size: cover;
+}
+.primary-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 18px;
+  gap: 10px;
+  border-radius: 6px;
+  border: 1px solid;
+  opacity: 0px;
+  background: radial-gradient(
+      39.66% 50% at 50% 100%,
+      #b3c1de 0%,
+      rgba(179, 193, 222, 0.5) 100%
+    ),
+    linear-gradient(0deg, var(--text-accent), var(--text-accent));
+  border-image-source: radial-gradient(
+    129.25% 1120.52% at 11.08% 100%,
+    #b3c1de 0%,
+    rgba(179, 193, 222, 0) 100%
+  );
+  font-family: 'Sora';
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.secondary-btn {
+  padding: 15px 18px;
+  gap: 10px;
+  border-radius: 6px;
+  opacity: 0px;
+  border: 1px solid #b3c0de46;
+  background-color: transparent;
+  font-family: 'Sora';
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+.mandela-ethos-right-container-img-big {
 }
 
 @layer utilities {
