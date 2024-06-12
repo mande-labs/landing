@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sora: ['"Sora"', 'sans-serif'],
+        visby: ['"Visby"', 'Sora', 'sans-serif'],
+        visbyMedium: ['"Visby-medium"', 'Sora', 'sans-serif'],
       },
       colors: {
         primary: {
@@ -28,15 +30,23 @@ module.exports = {
         'card-bold-text-radial':
           'radial-gradient(4399.18% 92.62% at 0% 50%, #FFF 65.5%, rgba(179, 193, 222, 0.80) 89.5%)',
         'community-card-gradient': `
-          linear-gradient(to bottom right, rgba(179, 193, 222, 0.15) 0%, rgba(0, 12, 27, 0.00) 50%) bottom right / 50% 50% no-repeat,
-          linear-gradient(to bottom left, rgba(179, 193, 222, 0.15) 0%, rgba(0, 12, 27, 0.00) 50%) bottom left / 50% 50% no-repeat,
-          linear-gradient(to top left, rgba(179, 193, 222, 0.15) 0%, rgba(0, 12, 27, 0.00) 50%) top left / 50% 50% no-repeat,
-          linear-gradient(to top right, rgba(179, 193, 222, 0.15) 0%, rgba(0, 12, 27, 0.00) 50%) top right / 50% 50% no-repeat
+          linear-gradient(to bottom right, rgba(179, 192, 222, 0.01) 0%, rgba(179, 192, 222, 0.00) 50%) bottom right / 50% 50% no-repeat,
+          linear-gradient(to bottom left, rgba(179, 192, 222, 0.01) 0%, rgba(179, 192, 222, 0.00) 50%) bottom left / 50% 50% no-repeat,
+          linear-gradient(to top left, rgba(179, 192, 222, 0.01) 0%, rgba(179, 192, 222, 0.00) 50%) top left / 50% 50% no-repeat,
+          linear-gradient(to top right, rgba(179, 192, 222, 0.01) 0%, rgba(179, 192, 222, 0.00) 50%) top right / 50% 50% no-repeat,
+          linear-gradient(to bottom right, rgba(179, 193, 222, 0.08) 0%, rgba(179, 193, 222, 0.06) 50%) bottom right / 50% 50% no-repeat,
+          linear-gradient(to bottom left, rgba(179, 193, 222, 0.08) 0%, rgba(179, 193, 222, 0.06) 50%) bottom left / 50% 50% no-repeat,
+          linear-gradient(to top left, rgba(179, 193, 222, 0.08) 0%, rgba(179, 193, 222, 0.06) 50%) top left / 50% 50% no-repeat,
+          linear-gradient(to top right, rgba(179, 193, 222, 0.08) 0%, rgba(179, 193, 222, 0.06) 50%) top right / 50% 50% no-repeat
+        
         `,
       },
       borderImageSource: {
         'primary-border-gradient':
           'radial-gradient(129.25% 1120.52% at 11.08% 100%, #B3C1DE 0%, rgba(179, 193, 222, 0) 100%)',
+      },
+      backdropFilter: {
+        'blur-35': 'blur(35px)',
       },
       backgroundClip: {
         text: 'text',

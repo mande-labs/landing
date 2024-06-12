@@ -22,62 +22,149 @@
       <div class="container flex max-w-[90%] justify-between items-center">
         <img class="h-10" src="../public/assets/img/logo1.svg" alt="Logo" />
         <div class="hidden md:flex space-x-4">
-          <ul class="list flex items-center gap-10 tracking-wider">
-            <li class="listItemContainer flex items-center gap-2">
-              <div class="itemText">
-                Ecosystem
+        
+            <ul class="list flex items-center gap-10 tracking-wider">
+            <li class="dropdown listItemContainer relative flex items-center gap-2 cursor-pointer group">
+              <div class="itemText">Ecosystem</div>
+              <img id="arrow-ecosystem " height="20" width="20" src="../public/assets/img/chevron-directionup.svg" class="itemText transition-transform group-hover:rotate-180" alt="Arrow" />
+              <div id="dropdown-ecosystem" class="dropdown-content rounded-lg text-white ">
+                <a target="_blank"  href="https://www.p2px.finance/">P2PX</a>
+                <a target="_blank"  href="https://www.zerolend.pro/">ZeroLend</a>
+                <a target="_blank"  href="https://www.modelverse.xyz/">Model Verse</a>
+                <a target="_blank"  href="https://www.sakura.community/">Sakura</a>
               </div>
-              <img height="20" width="20" src="../public/assets/img//chevron-directionup.svg"
-              class="itemText" alt="Arrow" />
             </li>
-            <li class="listItemContainer flex items-center gap-2">
-              <div class="itemText">
-                Network
+            <li class="dropdown listItemContainer relative flex items-center gap-2 cursor-pointer group">
+              <div class="itemText">Network</div>
+              <img id="arrow-network" height="20" width="20" src="../public/assets/img/chevron-directionup.svg" class="itemText transition-transform group-hover:rotate-180" alt="Arrow" />
+              <div id="dropdown-network " class="dropdown-content">
+                <a target="_blank"  href="https://medium.com/@Mande_Network/mand-token-distribution-draft-9f147be3fdb0">Tokenomics</a>
+                <a target="_blank"  href="https://github.com/mande-labs">Github</a>
+                <div class="nested-dropdown relative ">
+                  <a href="#" class="whitepapers-subitem relative flex flex-row items-center  group ">
+                    <div class="flex-1">Whitepapers &#8250</div>
+                                  </a>
+                  <div class="nested-dropdown-content ">
+                    <a target="_blank"  href="https://drive.google.com/file/d/11jiDY8HpUnPp1feYAs-hVO3QO89ihRBn/view?pli=1">Mande Whitepaper</a>
+                    <a target="_blank"  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4811471">Proof-of-Credibilty SDK litepaper</a>
+                  </div>
+                </div>
               </div>
-              <img height="20" width="20" src="../public/assets/img//chevron-directionup.svg"
-              class="itemText" alt="Arrow" />
             </li>
-            <li class="listItemContainer flex items-center gap-2">
-              <div class="itemText">
-                Social
+            <li class="dropdown listItemContainer relative flex items-center gap-2 cursor-pointer group ">
+              <div class="itemText">Social</div>
+              <img id="arrow-social" height="20" width="20" src="../public/assets/img/chevron-directionup.svg" class="itemText transition-transform group-hover:rotate-180" alt="Arrow" />
+              <div id="dropdown-social" class="dropdown-content">
+                <a target="_blank"  href="https://x.com/MandeNxcetwork">Twitter</a>
+                <a target="_blank"  href="https://medium.com/@Mande_Network">Blog</a>
+                <a target="_blank"   href="https://discord.com/invite/9Ugch3fRC2">Discord</a>
               </div>
-              <img height="20" width="20" src="../public/assets/img//chevron-directionup.svg"
-              class="itemText" alt="Arrow" />
+            </li>
+            <li class="dropdown listItemContainer relative flex items-center gap-2 cursor-pointer group">
+              <div class="itemText">$MAND</div>
+              <img id="arrow-stake" height="20" width="20" src="../public/assets/img/chevron-directionup.svg" class="itemText transition-transform group-hover:rotate-180" alt="Arrow" />
+              <div id="dropdown-stake" class="dropdown-content ">
+                <a href="#">Governance Staking</a>
+                <a href="#">Credibilisty Staking</a>
+                <a href="#">Bitget</a>
+                <a href="#">Dymension DEX</a>
+              </div>
             </li>
           </ul>
         </div>
-        <div class="flex items-center space-x-4 tracking-wide">
-          <button class="primary-btn  text-[#04154D] ">
+        <div class="  space-x-4 tracking-wide hidden  md:flex  md:items-center">
+          <a href="https://discord.com/invite/9Ugch3fRC2" target="_blank" class="primary-btn  text-[#04154D] transition duration-500 hover:scale-105  ">
             Join Discord
             <img height="20" width="20" src="../public/assets/img/iconssocialsdiscord.svg"
             alt="Discord" />
-          </button>
-          <button class="secondary-btn tracking-wide text-textPrimary hidden md:flex ">
+          </a>
+          <a href="https://app.mande.network" target="_blank"  class="secondary-btn tracking-wide text-textPrimary  md:flex transition duration-500 hover:scale-105">
             Testnet
-          </button>
+          </a>
         </div>
-        <div class="md:hidden flex items-center">
-          <button id="menu-btn" class="text-white focus:outline-none">
+        <div class="md:hidden flex items-center ">
+          <button id="menu-toggle" class="text-white focus:outline-none">
            <img src="../public/assets/img/iconsburger.svg" alt="">
           </button>
         </div>
       </div>
-      <div id="menu" class="hidden md:hidden">
-        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500">
-          Home
-        </a>
-        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500">
-          About
-        </a>
-        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500">
-          Services
-        </a>
-        <a href="#" class="block px-4 py-2 text-white hover:bg-blue-500">
-          Contact
-        </a>
-      </div>
-    </nav>
-      
+             
+
+  </nav>
+    <div id="menu-modal" class="modal fixed top-0 left-0 w-80 bg-black text-secondary h-full z-50  overflow-y-auto">
+    <ul class="p-4 ">
+ <div class="flex justify-between items-center mt-4 mb-6">
+      <img class="h-10" src="../public/assets/img/logo1.svg" alt="Logo" />
+      <button id="close-menu" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>      <li class="border-t border-gray-700">
+        <button class="w-full text-left p-4 flex justify-between items-center font-semibold" onclick="toggleMenu('item1')">
+          Ecosystem
+          <svg class="w-4 h-4 transform transition-transform duration-200" id="arrow-item1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+          </svg>
+        </button>
+        <div id="item1" class="hidden pl-4 pr-4 pb-4 text-textPrimary text-[14px]">
+          <a target="_blank"  href="https://www.p2px.finance/" class="block p-2">P2PX</a>
+          <a target="_blank"  href="https://www.zerolend.pro/" class="block p-2">ZeroLend</a>
+          <a target="_blank"  href="https://www.modelverse.xyz/" class="block p-2">Model Verse</a>
+          <a target="_blank"  href="https://www.sakura.community/" class="block p-2">Sakura</a>
+        </div>
+      </li>
+      <li class="border-t border-gray-700">
+        <button class="w-full text-left p-4 flex justify-between items-center font-semibold" onclick="toggleMenu('item2')">
+          Network
+          <svg class="w-4 h-4 transform transition-transform duration-200" id="arrow-item2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+          </svg>
+        </button>
+        <div id="item2" class="hidden pl-4 pr-4 pb-4 text-textPrimary text-[14px]">
+           <a target="_blank"  href="https://medium.com/@Mande_Network/mand-token-distribution-draft-9f147be3fdb0" class="block p-2">Tokenomics</a>
+          <a target="_blank"  href="https://github.com/mande-labs" class="block p-2">Github</a>
+          <button class="w-full text-left p-2 flex justify-between items-center text-secondary" onclick="toggleMenu('subItem2')">
+            Whitepapers
+            <svg class="w-4 h-4 transform transition-transform duration-200" id="arrow-subItem2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+            </svg>
+          </button>
+          <div id="subItem2" class="hidden pl-4 pr-4 pb-4 text-textPrimary text-[12px]">
+            <a target="_blank"  href="https://drive.google.com/file/d/11jiDY8HpUnPp1feYAs-hVO3QO89ihRBn/view?pli=1" class="block p-2">Mande Whitepaper</a>
+            <a target="_blank"  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4811471" class="block p-2">Proof-of-Credibilty SDK litepaper</a>
+          </div>
+         
+        </div>
+      </li>
+      <li class="border-t border-gray-700">
+        <button class="w-full text-left p-4 flex font-semibold justify-between items-center" onclick="toggleMenu('item3')">
+          Social
+          <svg class="w-4 h-4 transform transition-transform duration-200" id="arrow-item3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+          </svg>
+        </button>
+        <div id="item3" class="hidden pl-4 pr-4 pb-4 text-textPrimary text-[14px]">
+          <a target="_blank"  href="https://x.com/MandeNetwork" class="block p-2">Twitter</a>
+          <a target="_blank"  href="https://medium.com/@Mande_Network" class="block p-2">Blog</a>
+          <a target="_blank"  href="https://discord.com/invite/9Ugch3fRC2" class="block p-2">Discord</a>
+        </div>
+      </li>  <li class="border-t border-gray-700">
+        <button class="w-full text-left p-4 flex font-semibold justify-between items-center" onclick="toggleMenu('item4')">
+          Stake
+          <svg class="w-4 h-4 transform transition-transform duration-200" id="arrow-item4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+          </svg>
+        </button>
+        <div id="item4" class="hidden pl-4 pr-4 pb-4 text-textPrimary text-[14px]">
+          <a href="#"  class="block p-2">Governance Staking</a>
+          <a href="#" class="block p-2">Credibility Staking</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
       <div class="header-main-hero h-screen flex justify-center bg-cover bg-center bg-no-repeat   w-screen">
 
       <div class="container px-4 md:px-0 md:max-w-[90%] max-h-[80%] md:max-h-[80%] flex flex-col justify-center">
@@ -86,19 +173,19 @@
           <br />
           hub for Web3
         </h1>
-        <p class="text-[16px] md:text-[20px] w-[90%] md:w-[45%] mb-16 md:mb-16 tracking-wide ">
+        <p class="text-[16px] md:text-[20px] w-[90%] md:w-[45%] mb-16 md:mb-16 tracking-wide font-visbyMedium ">
           Dymension RollApp, as an open on chain reputation layer on Web3. To record
           credit scores, ratings, activities, reputation, and digital identity accomplishments.
         </p>
         <div class="flex items-center space-x-4">
-          <button class="primary-btn flex items-center text-[#04154D]">
+          <a href="https://discord.com/invite/9Ugch3fRC2" target="_blank"  class="primary-btn flex items-center text-[#04154D] transition duration-500 hover:scale-105">
             Join Discord
             <img height="20" width="20" src="../public/assets/img/iconssocialsdiscord.svg"
             alt="Discord" />
-          </button>
-          <button class="secondary-btn tracking-wide">
+          </a>
+          <a href="https://app.mande.network" target="_blank"  class="secondary-btn tracking-wide transition duration-500 hover:scale-105">
             Testnet
-          </button>
+          </a>
         </div>
       </div>
             </div>
@@ -107,7 +194,7 @@
     <!-- Main Content -->
     <main class="main-container mt-8 flex flex-col items-center gap-[100px] ">
       <section class="motto-container flex flex-col gap-6  w-[90%] md:flex md:flex-row ">
-        <div class="motto-left-container w-full rounded-[15px] border-[0.5px] border-opacity-40  border-secondary  py-[60px] px-4 flex flex-col items-center text-center text-textPrimary shadow-[inset_-12px_-8px_40px_#46464620] shadow-gray-800  justify-center md:w-[60%]">
+        <div class="motto-left-container w-full rounded-[15px] border-[0.5px] border-opacity-40  border-secondary  py-[60px] px-4 flex flex-col items-center text-center text-textPrimary shadow-[inset_-12px_-8px_40px_#46464620] shadow-gray-800  justify-center md:w-[60%] bg-card-gradient">
           <div class="motto-left-heading-text hidden md:block text-[48px] md:text-[48px] mb-[8px] font-semibold leading-tight">
             I am because
             <br/>
@@ -124,89 +211,89 @@
             Our vision is to build Web3 for the people
           </div>
         </div>
-        <div class="motto-right-container  w-full rounded-[15px] border-[0.5px] border-opacity-40  border-secondary shadow-[inset_-12px_-8px_40px_#46464620] shadow-gray-800   py-[48px] px-4 flex flex-col  text-center text-textPrimary gap-10 items-center justify-center md:w-[40%] md:text-start ">
+        <div class="motto-right-container  w-full rounded-[15px] border-[0.5px] border-opacity-40  border-secondary shadow-[inset_-12px_-8px_40px_#46464620] shadow-gray-800   py-[48px] px-4 flex flex-col  text-center text-textPrimary gap-10 items-center justify-center md:w-[40%] md:text-start bg-card-gradient">
           <div class="md:w-[60%] h-full flex flex-col justify-center md:items-center  gap-10 font-light ">
             <div class="motto-right-text-container flex flex-col gap-4 text-[16px] md:text-[20px]  text-wrap">
-              <div class="motto-right-primary-text">
-                Our network, inspired by Ubuntu philosophy, invests in you with our tokens.
+              <div class="motto-right-primary-text font-visbyMedium tracking-wide">
+                Our network, inspired by <a href='https://en.wikipedia.org/wiki/Ubuntu_philosophy' target='_blank' class='underline font-semibold'>Ubuntu philosophy</a>, invests in you with our tokens.
                 Your growth fuels our success.
               </div>
               <div class="motto-right-secondary-text ">
                 Let’s unlock greatness together!
               </div>
             </div>
-            <div class="motto-right-learn-more-container w-fit flex gap-2 border-b-[1px] pb-[2px] border-secondary  md:self-start self-center">
+            <a href='https://medium.com/@Mande_Network/what-is-a-human-capital-network-5c7e9a4a4ff9' target='_blank' class="motto-right-learn-more-container w-fit flex gap-2 border-b-[1px] pb-[2px] border-secondary  md:self-start self-center transition duration-500 hover:scale-105" >
               <div class="learn-more-text  font-bold text-secondary">
                 Learn more
               </div>
               <img class="learn-more-img " src='../public/assets/img/iconsarrow-1.svg'>
               </img>
-            </div>
+            </a>
           </div>
         </div>
       </section>
       <section class="poc-container flex  flex-col   w-[90%] gap-4   md:flex-row md:items-center md:justify-center">
-        <div class="poc-left-main-container h-[618px] max-h-[360px]  flex flex-col items-start justify-between px-8 py-10 pb-[60px]  shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px]  border-secondary  shadow-gray-800 md:max-h-[618px] md:w-[45%]">
+        <div class="poc-left-main-container h-[618px] max-h-[360px]  flex flex-col items-start justify-between px-8 py-10 md:pb-[60px]  bg-card-gradient   border-[0.5px] border-opacity-40 rounded-[10px]  border-secondary  shadow-gray-800 md:max-h-[618px] md:w-[45%]">
           <div class="poc-top-container text-textPrimary flex flex-col gap-4">
             <div class="poc-heading-text font-semibold  md:text-[40px] md:leading-tight text-[26px]">
               Proof of
               <br/>
               Credibility SDK
             </div>
-            <div class="poc-description-text text-[14px] md:text-[16px] md:tracking-wide w-[80%]">
+            <div class="poc-description-text text-[14px] md:text-[16px] md:tracking-wide w-[80%] font-visbyMedium tracking-wide">
               The Proof of Credibility SDK enables developers to integrate decentralized
               reputation systems into their DAPPs, fostering trust through the following:
             </div>
           </div>
-          <div class="poc-bottom-container-btn w-fit flex gap-2 border-b-[2px] pb-[2px] border-secondary items-center md:self-start self-start">
+          <a href='https://github.com/mande-labs/poc-sdk' target='_blank' class="poc-bottom-container-btn w-fit flex gap-2 border-b-[2px] pb-[2px] border-secondary items-center md:self-start self-start transition duration-500 hover:scale-105">
             <div class="poc-bottom-container-text  font-bold text-secondary">
               Explore Docs
             </div>
             <img class="poc-bottom-img " src='../public/assets/img/iconsarrow-1.svg'>
             </img>
-          </div>
+          </a>
         </div>
         <div class="poc-right-main-group text-center flex h-[618px] gap-4 text-textPrimary">
           <div class="poc-right-col-1 h-full flex flex-col gap-4 w-[50%]">
-            <div class="poc-col-1-row-1 h-[40%] shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center  border-secondary px-2 py-2 shadow-gray-800 ">
+            <div class="poc-col-1-row-1 h-[40%] shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center  border-secondary px-2 py-2 shadow-gray-800 bg-card-gradient">
               <img class="poc-col-1-row-1-icon  h-16 w-16 md:h-20 md:w-20" src='../public/assets/img/mage_file-2-fill.svg'>
               </img>
               <div class="poc-col-1-row-1-heading text-[18px] font-semibold my-2 md:text-[20px]">
                 Track Record
               </div>
-              <div class="poc-col-1-row-1-description text-[12px] md:text-[14px] md:tracking-wide md:w-[70%]">
+              <div class="poc-col-1-row-1-description text-[12px] md:text-[14px] md:tracking-wide md:w-[70%] font-visbyMedium ">
                 Logs user transactions to build on-chain reputation
               </div>
             </div>
-            <div class="poc-col-1-row-2  h-[60%] shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center  border-secondary px-2 py-2 shadow-gray-800">
+            <div class="poc-col-1-row-2 bg-card-gradient h-[60%] shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center  border-secondary px-2 py-2 shadow-gray-800">
               <img class="poc-col-1-row-2-icon h-16 w-16 md:h-20 md:w-20" src='../public/assets/img/fa-solid_vote-yea.svg'>
               </img>
               <div class="poc-col-1-row-2-heading text-[18px] font-semibold my-2 md:text-[20px]">
                 Peer-to-Peer Voting
               </div>
-              <div class="poc-col-1-row-2-description text-[12px] md:text-[14px] md:tracking-wide md:w-[70%]">
+              <div class="poc-col-1-row-2-description text-[12px] md:text-[14px] md:tracking-wide md:w-[70%] font-visbyMedium ">
                 Implements quadratic voting for peer to peer trust scores
               </div>
             </div>
           </div>
           <div class="poc-right-col-2 h-full flex w-[50%] flex-col gap-4">
-            <div class="poc-right-col-2  h-[60%] shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center  border-secondary px-2 py-2 shadow-gray-800">
+            <div class="poc-right-col-2 bg-card-gradient h-[60%] shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center  border-secondary px-2 py-2 shadow-gray-800">
               <img class="poc-col-2-row-1-icon  h-16 w-16 md:h-20 md:w-20" src='../public/assets/img/mingcuteuserstarfill1.svg'>
               </img>
               <div class="poc-col-2-row-1-heading text-[18px] font-semibold my-2 md:text-[20px]">
                 On-chain Credentials
               </div>
-              <div class="poc-col-2-row-1-description text-[12px] md:text-[14px] md:tracking-wide md:w-[60%]">
+              <div class="poc-col-2-row-1-description text-[12px] md:text-[14px] md:tracking-wide md:w-[60%] font-visbyMedium">
                 Let's users prove their web2 credentials in web3 using ZK proofs.
               </div>
             </div>
-            <div class="poc-col-2-row-2   h-[40%] shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center  border-secondary px-2 py-2 shadow-gray-800">
+            <div class="poc-col-2-row-2 bg-card-gradient  h-[40%] shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center  border-secondary px-2 py-2 shadow-gray-800">
               <img class="poc-col-2-row-2-icon  h-16 w-16 md:h-20 md:w-20" src='../public/assets/img/heroiconstrophysolid1.svg'>
               </img>
               <div class="poc-col-2-row-2-heading text-[18px] font-semibold my-2 md:text-[20px]">
                 DAO Attestations
               </div>
-              <div class="poc-col-2-row-2-description text-[12px] md:text-[14px] md:tracking-wide md:w-[70%]">
+              <div class="poc-col-2-row-2-description text-[12px] md:text-[14px] md:tracking-wide md:w-[70%] font-visbyMedium">
                 Enables DAOs to award rights and badges (SBTs).
               </div>
             </div>
@@ -217,11 +304,11 @@
         <div class="technology-container-left-container md:text-[40px]  text-[26px] font-bold text-textPrimary z-10 md:w-[40%]">
           Technology on <br/> Mande Network
         </div>
-        <div class="rounded-[407px] bg-[#04154D] opacity-1 blur-[225.9px] h-full w-full inset-0 absolute "></div>
+        <div class="rounded-[407px] bg-[#04154D] opacity-80 blur-[225.9px] h-full w-full left-0 bottom-0 top-0 absolute "></div>
 
         <div class="technology-container-right-container md:flex-1 md:w-[60%] z-10">
           <ul class='gap-10 md:gap-0 py-4 md: md:flex-col'>
-            <li class='flex flex-col  gap-10  md:flex md:flex-row border-t-[1px]  border-[#636467]  border-opacity-50 py-8 items-start'>
+            <li class='flex flex-col  gap-10  md:flex md:flex-row border-t-[1px]  border-[#636467]  border-opacity-50 py-8 items-start '>
               <div class="techonology-item-left-container    flex gap-2 md:w-[40%]">
                 <img class="techonology-item-left-icon w-8" src='../public/assets/img/iconsid.svg'>
                 </img>
@@ -229,7 +316,7 @@
                   Decentralised Identity
                 </div>
               </div>
-              <div class="techonology-item-description text-textPrimary font-light leading-normal text-[14px] tracking-wide md:w-[60%] w-[90%]">
+              <div class="techonology-item-description text-textPrimary  leading-normal text-[14px] tracking-wide md:w-[60%] w-[90%] font-visbyMedium ">
                 Mande consolidates users' multiple wallets and reputation data from various
                 apps using DIDs for decentralised identity, in accordance with W3C specifications
                 on DiDs and VCs.
@@ -245,7 +332,7 @@
                   ZK Credentials
                 </div>
               </div>
-              <div class="techonology-item-description text-textPrimary font-light leading-normal text-[14px] tracking-wide md:w-[60%] w-[90%]">
+              <div class="techonology-item-description text-textPrimary  leading-normal text-[14px] tracking-wide md:w-[60%] w-[90%] font-visbyMedium">
                 Mande uses ZK proofs for users to submit verifiable credentials without
                 disclosing sensitive information, like proving they are over 18 without
                 revealing their exact age.
@@ -259,7 +346,7 @@
                   Soul Bound Tokens
                 </div>
               </div>
-              <div class="techonology-item-description text-textPrimary font-light leading-normal text-[14px] tracking-wide md:w-[60%] w-[90%]">
+              <div class="techonology-item-description text-textPrimary  leading-normal text-[14px] tracking-wide md:w-[60%] w-[90%] font-visbyMedium">
                Soul-bound tokens on the Mande blockchain are like non-transferable NFTs.
                 They represent public community attestations minted on-chain.
               </div>
@@ -274,27 +361,27 @@
           Join our community
         </div>
       
-        <div class="community-cards-container flex overflow-x-scroll md:overflow-x-auto gap-10 py-10 w-full justify-between z-10 ">
+        <div class="community-cards-container no-scrollbar flex overflow-x-scroll md:justify-around md:flex-wrap gap-10 py-10 w-full justify-between z-10 " >
          
-          <div class="community-cards-container-card shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center text-center  border-secondary px-2 py-6 shadow-gray-800 max-w-[281px]    ">
+          <div class="community-cards-container-card shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center text-center  border-secondary px-2 py-6 shadow-gray-800 max-w-[281px]  bg-card-gradient  ">
             <img class="community-cards-container-card-icon h-16 w-16 md:h-20 md:w-20" src='../public/assets/img/materialsymbolshandshake.svg'>
             </img>
             <div class="community-cards-container-card-title text-[18px] font-semibold my-2 md:text-[20px] w-screen max-w-[281px] text-textPrimary">
               Explore proof of <br/> credibility
             </div>
-            <div class="community-cards-container-card-description text-[12px] md:text-[14px] md:tracking-wide w-[70%]">
+            <div class="community-cards-container-card-description text-[12px] md:text-[14px] md:tracking-wide w-[70%] font-visbyMedium tracking-wide">
               Explore proof-of-credibility SDK to solve for trust on your DAPPs.
             </div>
           </div>
 
 
-           <div class="community-cards-container-card shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center text-center  border-secondary px-2 py-6 shadow-gray-800 flex-1 max-w-[281px]    ">
+           <div class="community-cards-container-card shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center text-center  border-secondary px-2 py-6 shadow-gray-800 flex-1 max-w-[281px] bg-card-gradient   ">
             <img class="community-cards-container-card-icon h-16 w-16 md:h-20 md:w-20" src='../public/assets/img/majesticonscodeblock.svg'>
             </img>
             <div class="community-cards-container-card-title text-[18px] font-semibold my-2 md:text-[20px] w-screen max-w-[281px] text-textPrimary">
               Build on Mande <br/> Mande
             </div>
-            <div class="community-cards-container-card-description text-[12px] md:text-[14px] md:tracking-wide w-[70%]">
+            <div class="community-cards-container-card-description text-[12px] md:text-[14px] md:tracking-wide w-[70%] font-visbyMedium tracking-wide">
               Disrupt decentralised marketplaces using human trust.
             </div>
           </div>
@@ -302,13 +389,13 @@
 
       
 
-           <div class="community-cards-container-card shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center text-center  border-secondary px-2 py-6 shadow-gray-800 flex-1 max-w-[281px]    ">
+           <div class="community-cards-container-card shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center text-center  border-secondary px-2 py-6 shadow-gray-800 flex-1 max-w-[281px]  bg-card-gradient  ">
             <img class="community-cards-container-card-icon h-16 w-16 md:h-20 md:w-20" src='../public/assets/img/solarshieldupbold.svg'>
             </img>
             <div class="community-cards-container-card-title text-[18px] font-semibold my-2 md:text-[20px] w-screen max-w-[281px] text-textPrimary">
               Become a fault <br/> prover
             </div>
-            <div class="community-cards-container-card-description text-[12px] md:text-[14px] md:tracking-wide w-[70%]">
+            <div class="community-cards-container-card-description text-[12px] md:text-[14px] md:tracking-wide w-[70%] font-visbyMedium tracking-wide">
               Help secure Mande by becoming a credible fault prover
             </div>
           </div>
@@ -316,13 +403,13 @@
 
       
          
-           <div class="community-cards-container-card shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center text-center  border-secondary px-2 py-6 shadow-gray-800 flex-1 max-w-[281px]   backdrop-blur-2xl  ">
+           <div class="community-cards-container-card shadow-[inset_-12px_-8px_40px_#46464620] border-[0.5px] border-opacity-40 rounded-[10px] flex flex-col items-center justify-center text-center  border-secondary px-2 py-6 shadow-gray-800 flex-1 max-w-[281px]   backdrop-blur-2xl bg-card-gradient ">
             <img class="community-cards-container-card-icon h-16 w-16 md:h-20 md:w-20" src='../public/assets/img/octiconfeedstar16.svg'>
             </img>
             <div class="community-cards-container-card-title text-[18px] font-semibold my-2 md:text-[20px] w-screen max-w-[281px] text-textPrimary">
               Issue <br/> credibility
             </div>
-            <div class="community-cards-container-card-description text-[12px] md:text-[14px] md:tracking-wide w-[70%]">
+            <div class="community-cards-container-card-description text-[12px] md:text-[14px] md:tracking-wide w-[70%] font-visbyMedium tracking-wide">
               Become a Credibility issuer by signing up as a DAO on Mande
             </div>
           </div>
@@ -330,12 +417,22 @@
 
      
         </div>
+          <div class="  flex  md:hidden justify-end gap-8">
+    <button id="prev-btn" class="">
+       <img class="" src='../public/assets/img/iconsarrow-2.svg'>
+            </img>
+    </button>
+    <button id="next-btn" class="">  <img class="" src='../public/assets/img/iconsarrow-3.svg'>
+            </img></button>
+  </div>
+
       </section>
-      <section class="mandela-ethos-container w-[90%] text-textPrimary flex flex-col md:flex-row md:items-center">
-        <div class="mandela-ethos-left-container flex flex-col gap-10 relative">
+      <section class="mandela-ethos-container w-[90%] text-textPrimary flex flex-col md:flex-row justify-between md:items-center">
+        <div class="mandela-ethos-left-container flex flex-col gap-10 relative md:w-[60%]">
           <div class="mandela-ethos-left-heading text-[26px] font-semibold text-textPrimary hidden md:block md:text-[40px]">
             We share Mandela’s ethos in <br/> making Web3 equitable
-          </div> <div class="mandela-ethos-left-heading text-[26px] font-semibold text-textPrimary md:text-[40px] md:hidden">
+          </div> 
+          <div class="mandela-ethos-left-heading text-[26px] font-semibold text-textPrimary md:text-[40px] md:hidden">
             We share Mandela’s ethos in making Web3 equitable
           </div>
             <div class="rounded-[453.471px] bg-[#B3C0DE] opacity-40 blur-[225.9px] h-[500px] w-full  md:hidden absolute top-0 left-0"></div>
@@ -347,16 +444,16 @@
             <div class="mandela-ethos-left-quote-text font-semibold text-[20px] md:text-[24px]">
               I Am Prepared to Die
             </div>
-            <div class="mandela-ethos-left-quote-details text-[12px] md:text-[14px]">
+            <div class="mandela-ethos-left-quote-details text-[12px] md:text-[14px] font-visbyMedium tracking-wide">
               Nelson Mandela, 20th April 1964
             </div>
           </div>
           <div class="mandela-ethos-left-bottom-quote-container flex flex-col gap-2 md:gap-8 md:flex-row md:w-[70%]">
-            <div class="mandela-ethos-left-bottom-quote text-[12px] tracking-wide  md:text-[14px] w-[80%] leading-relaxed">
+            <div class="mandela-ethos-left-bottom-quote text-[12px] tracking-wide  md:text-[14px] w-[80%] font-visbyMedium  leading-relaxed">
               I have cherished the ideal of a democratic and free society in which all
               persons will live together in harmony and with equal opportunities.
             </div>
-            <div class="mandela-ethos-left-bottom-quote text-[12px] tracking-wide  md:text-[14px] w-[80%] leading-relaxed">
+            <div class="mandela-ethos-left-bottom-quote text-[12px]   md:text-[14px] font-visbyMedium  tracking-wide w-[80%] leading-relaxed">
               It is an ideal for which I hope to live for and to see realized. But,
               My Lord, if it needs to be, it is an ideal for which I am prepared to die.
             </div>
@@ -364,9 +461,9 @@
          </div>
 
         </div>
-        <div class="mandela-ethos-right-container-img-big relative ">
+        <div class="mandela-ethos-right-container-img-big relative md:w-[40%] hidden md:block    flex-col justify-center items-center pr-10 ">
           <div class="rounded-[453.471px] bg-[#B3C0DE] opacity-40 blur-[225.9px] h-[500px] w-full hidden md:block absolute top-0 left-0"></div>
-          <img class="mandela-ethos-right-container-img hidden md:block relative z-10" src='../public/assets/img/mandela1@2x.png'>
+          <img class="mandela-ethos-right-container-img hidden md:block relative z-10 " src='../public/assets/img/mandela1@2x.png'>
           </img>
         </div>
       </section>
@@ -375,21 +472,21 @@
           Our team
         </div>
         <div class="team-right-container   md:flex-1 md:w-[75%]">
-          <ul class='flex overflow-x-scroll md:overflow-x-hidden gap-10 md:gap-0 py-4 md: md:flex-col '>
-            <li class='  flex flex-col  gap-10  md:flex md:flex-row border-t-[1px]  border-[#636467]  border-opacity-50 py-8'>
-              <div class="team-item-left-main-container w-screen  flex gap-10 md:w-[30%]  ">
+          <ul class='team-cards-container flex overflow-x-scroll md:overflow-x-hidden gap-10 md:gap-0 py-4 md: md:flex-col no-scrollbar'>
+            <li class='  flex flex-col  gap-10  md:flex md:flex-row border-t-[1px]  border-[#636467]  border-opacity-50 py-8 '>
+              <div class="team-item-left-main-container w-screen  flex gap-10 md:w-[30%] flex-wrap ">
                 <img class="team-item-left-img object-cover  h-[100px] w-[100px]" src='../public/assets/img/1-1@2x.png'>
                 </img>
-                <div class="team-detail flex-shrink-0">
+                <div class="team-detail ">
                   <div class="name font-semibold capitalize text-xl text-textPrimary ">
                     sandeep m
                   </div>
-                  <div class="role border-[1px] rounded-full text-center px-2 py-1 border-[#C5C7CD] border-opacity-20 mt-[4px]">
+                  <div class="role border-[1px] rounded-full w-fit px-2 py-1 border-[#C5C7CD] border-opacity-20 mt-[4px] flex ">
                     Co-founder
                   </div>
                 </div>
               </div>
-              <div class="team-intro text-textPrimary font-light leading-normal text-[14px] tracking-wide md:w-[70%] w-[90%] ">
+              <div class="team-intro text-textPrimary  leading-normal text-[14px] tracking-wide md:w-[70%] w-[90%] font-visbyMedium">
                 Having over 10 years of entrepreneurial experience founding three companies,
                 I have always believed in the potential of people. It's my vision to build
                 a network of individuals who can collectively rebuild society from the
@@ -398,38 +495,36 @@
               </div>
             </li>
             <li class='  flex flex-col  gap-10  md:flex md:flex-row border-t-[1px]  border-[#636467]  border-opacity-50 py-8'>
-              <div class="team-item-left-main-container w-screen  flex gap-10 md:w-[30%] ">
-                <img class="team-item-left-img object-cover h-[100px] w-[100px]" src='../public/assets/img/1-1-1@2x.png'>
+              <div class="team-item-left-main-container w-screen  flex gap-10 md:w-[30%] flex-wrap ">
+                <img class="team-item-left-img object-cover h-[100px] w-[100px] rounded-xl" src='../public/assets/img/prtk.png'>
                 </img>
                 <div class="team-detail flex-shrink-0">
                   <div class="name font-semibold capitalize text-xl text-textPrimary ">
-                    pratik agarwal
+                    pratik<br/> agarwal
                   </div>
-                  <div class="role border-[1px] rounded-full text-center px-2 py-1 border-[#C5C7CD] border-opacity-20 mt-[4px]">
+                  <div class="role border-[1px] rounded-full w-fit px-2 py-1 border-[#C5C7CD] border-opacity-20 mt-[4px] flex">
                     Co-founder
                   </div>
                 </div>
               </div>
-              <div class="team-intro text-textPrimary font-light leading-normal text-[14px] tracking-wide md:w-[70%] w-[90%]">
-                Mande consolidates users' multiple wallets and reputation data from various
-                apps using DIDs for decentralised identity, in accordance with W3C specifications
-                on DiDs and VCs.
+              <div class="team-intro text-textPrimary  leading-normal text-[14px] tracking-wide md:w-[70%] w-[90%] font-visbyMedium">
+                Having a paramount interest in blockchain and experience in all aspects of the development cycle at some of the premier crypto organisations in India, such as WazirX and Questbook, I believe in the idea of utilizing human capital instead of monetary capital. This approach has the capability to "fix the crypto world." I am very excited about bringing Mande chain to life.
               </div>
             </li>
             <li class='  flex flex-col  gap-10  md:flex md:flex-row border-t-[1px]  border-[#636467]  border-opacity-50 py-8'>
-              <div class="team-item-left-main-container w-screen  flex gap-10 md:w-[30%]">
+              <div class="team-item-left-main-container w-screen  flex gap-10 md:w-[30%] flex-wrap">
                 <img class="team-item-left-img object-cover h-[100px] w-[100px]" src='../public/assets/img/1-1-21@2x.png'>
                 </img>
                 <div class="team-detail flex-shrink-0">
                   <div class="name font-semibold capitalize text-xl text-textPrimary ">
                     alani kuye
                   </div>
-                  <div class="role border-[1px] rounded-full text-center px-2 py-1 border-[#C5C7CD] border-opacity-20 capitalize mt-[4px]">
+                  <div class="role border-[1px] rounded-full w-fit px-2 py-1 border-[#C5C7CD] border-opacity-20 mt-[4px] flex">
                     Co-founder
                   </div>
                 </div>
               </div>
-              <div class="team-intro text-textPrimary font-light leading-normal text-[14px] tracking-wide md:w-[70%] w-[90%]">
+              <div class="team-intro text-textPrimary  leading-normal text-[14px] tracking-wide md:w-[70%] w-[90%] font-visbyMedium">
                 I am deeply passionate about financial inclusion and human capital development,
                 particularly regarding their transformative potential for Africa. My experience
                 includes building some of the most successful Web3 ecosystems, such as
@@ -438,19 +533,19 @@
               </div>
             </li>
             <li class='flex flex-col  gap-10  md:flex md:flex-row border-t-[1px]  border-[#636467]  border-opacity-50 py-8'>
-              <div class="team-item-left-main-container w-screen  flex gap-10 md:w-[30%]">
+              <div class="team-item-left-main-container w-screen  flex gap-10 md:w-[30%] flex-wrap">
                 <img class="team-item-left-img object-cover h-[100px] w-[100px]" src='../public/assets/img/1-1-31@2x.png'>
                 </img>
                 <div class="team-detail flex-shrink-0">
                   <div class="name font-semibold capitalize text-xl text-textPrimary ">
-                    deepanshu tripathi
+                    deepanshu<br/> tripathi
                   </div>
-                  <div class="role border-[1px] rounded-full text-center px-2 py-1 border-[#C5C7CD] border-opacity-20 capitalize mt-[4px]">
+                  <div class="role border-[1px] rounded-full w-fit px-2 py-1 border-[#C5C7CD] border-opacity-20 mt-[4px] flex capitalize">
                     advisor
                   </div>
                 </div>
               </div>
-              <div class="team-intro text-textPrimary font-light leading-normal text-[14px] tracking-wide md:w-[70%] w-[90%]">
+              <div class="team-intro text-textPrimary  leading-normal text-[14px] tracking-wide md:w-[70%] w-[90%] font-visbyMedium font-normal">
                 Having been an integral part of the Cosmos ecosystem since its inception,
                 and with my experience in developing Persistence and AssetMantle, I believe
                 that 'credibility' is the missing piece of the puzzle necessary to enable
@@ -459,6 +554,14 @@
               </div>
             </li>
           </ul>
+                    <div class="  flex  md:hidden justify-end gap-8">
+    <button id="prev-btn-team" class="">
+       <img class="" src='../public/assets/img/iconsarrow-2.svg'>
+            </img>
+    </button>
+    <button id="next-btn-team" class="">  <img class="" src='../public/assets/img/iconsarrow-3.svg'>
+            </img></button>
+  </div>
         </div>
       </section>
       <section class="discord-container w-[90%] md:flex md:flex-row flex flex-col gap-4 ">
@@ -477,13 +580,13 @@
             </img>
           </div>
           <div class="discord-top-text-container flex flex-col justify-between  gap-6 ">
-            <div class="description text-[16px] text-textPrimary">
+            <div class="description text-[16px] font-visbyMedium text-textPrimary">
               Dive into our Discord community and feel the pulse of innovation.
             </div>
-            <div class="discord-right-bottom-container w-fit flex gap-2 border-b-2 pb-[2px] border-secondary  items-center ">
-              <div class="text text-[16px] capitalize font-bold text-secondary">
+            <div class="discord-right-bottom-container w-fit flex gap-2 border-b-2 pb-[2px] border-secondary  items-center  transition duration-500 hover:scale-105 ">
+              <a target="_blank"   href="https://discord.com/invite/9Ugch3fRC2" class="text text-[16px] capitalize font-bold text-secondary ">
                 Join discord
-              </div>
+              </a>
               <img class="join-discord-btn-icon" src='../public/assets/img/iconschevron-1.svg'>
               </img>
             </div>
@@ -501,60 +604,62 @@
           </div>
           <div class="footer-top-right-container flex flex-col   md:flex-1 flex-wrap md:gap-20 md:flex md: md:justify-between md:flex-row gap-[28px] ">
             <div class="footer-col-1 flex flex-col gap-4">
-              <div class="footer-col-1-title font-semibold text-[18px] md:text-[20px] tracking-wide text-textPrimary">
+              <div class="footer-col-1-title font-semibold text-[18px] md:text-[20px] tracking-wide text-secondary">
                 About
               </div>
               <ul class=' flex flex-col gap-2 text-white text-[16px] tracking-wider font-light'>
-                <li class='footer-item'>
+                <a target="_blank"   href="https://drive.google.com/drive/u/3/folders/18dfa77OSr2JazBXVqtsYdwBdCKZh5Zr1" class='footer-item hover:text-secondary'>
                   Media kit
-                </li>
-                <li class='footer-item'>
+                </a>
+                <a target="_blank"   href="https://medium.com/@Mande_Network" class='footer-item hover:text-secondary'>
                   Blog
-                </li>
+                </a>    <a target="_blank"   href="https://docs.google.com/document/d/1-BfZtSnBNH-pANP9qkvvIwnqdYvjRT9R" class='footer-item hover:text-secondary'>
+                  Terms of Service
+                </a>
               </ul>
             </div>
             <div class="footer-col-2 flex flex-col gap-4">
-              <div class="footer-col-2-title font-semibold text-[18px] md:text-[20px] tracking-wide text-textPrimary">
+              <div  class="footer-col-2-title font-semibold text-[18px] md:text-[20px] tracking-wide text-secondary">
                 Social
               </div>
               <ul class='flex flex-col gap-2 text-white text-[16px] tracking-wider font-light'>
-                <li class='footer-item'>
+                <a target="_blank"   href="https://x.com/MandeNetwork" class='footer-item hover:text-secondary'>
                   Twitter
-                </li>
-                <li class='footer-item'>
+                </a>
+                <a target="_blank"   href="https://www.linkedin.com/company/mande-chain/" class='footer-item hover:text-secondary' >
                   LinkedIn
-                </li>
+                </a>
               </ul>
             </div>
             <div class="footer-col-3 flex flex-col gap-4">
-              <div class="footer-col-3-title font-semibold text-[18px] md:text-[20px] tracking-wide text-textPrimary">
+              <div class="footer-col-3-title font-semibold text-[18px] md:text-[20px] tracking-wide text-secondary">
                 DAPPs
               </div>
               <div class="footer-col-3-main  flex flex-col gap-6 text-white text-[16px] tracking-wider font-light md:flex md:flex-row ">
                 <ul class='text-md flex flex-col gap-2'>
-                  <li class='footer-item'>
+                  <a target="_blank"   href="https://www.p2px.finance/" class='footer-item hover:text-secondary'>
                     P2PX Finance
-                  </li>
-                  <li class='footer-item'>
+                  </a>
+                  <a target="_blank"   href="https://www.zerolend.pro/" class='footer-item hover:text-secondary'>
                     ZeroLend
-                  </li>
-                  <li class='footer-item'>
+                  </a>
+                  <a target="_blank"   href="https://www.modelverse.xyz/" class='footer-item hover:text-secondary'>
                     ModelVerse
-                  </li>
-                  <li class='footer-item'>
+                  </a>
+                  <a target="_blank"   href="https://www.sakura.community" class='footer-item hover:text-secondary'>
                     Sakura
-                  </li>
+                  </a>
                 </ul>
                 <ul class='text-md flex flex-col gap-2'>
-                  <li class='footer-item'>
+                  <a target="_blank"   href="https://docs.google.com/document/d/1ZMBMNmzm3RC6a6I4F676GWe5VRqcyOjL/edit" class='footer-item hover:text-secondary'>
                     Project Togo
-                  </li>
-                  <li class='footer-item'>
+                  </a>
+                  <a target="_blank"   href="https://medium.com/@Mande_Network/decentralised-education-deed-f11bf47ef6b7" class='footer-item hover:text-secondary'>
                     Decentralised Education
-                  </li>
-                  <li class='footer-item'>
+                  </a>
+                  <a target="_blank"   href="https://docs.google.com/document/d/11L0svLacD7wt-lW8H6MVqkrAawyl-kZt/edit?pli=1" class='footer-item hover:text-secondary' >
                     Regenerative Agriculture
-                  </li>
+                  </a>
                 </ul>
               </div>
             </div>
