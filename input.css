@@ -4,15 +4,15 @@
 
 @font-face {
   font-family: 'Sora';
-  src: url('../public/assets//fonts/Sora.ttf');
+  src: url('./public/assets//fonts/Sora.ttf');
 }
 @font-face {
   font-family: 'Visby';
-  src: url('../public/assets//fonts/VisbyRegular.otf');
+  src: url('./public/assets//fonts/VisbyRegular.otf');
 }
 @font-face {
   font-family: 'Visby-medium';
-  src: url('../public/assets//fonts/VisbyMedium.otf');
+  src: url('./public/assets//fonts/VisbyMedium.otf');
 }
 :root {
   --primary-color: #04154d;
@@ -41,7 +41,7 @@
 }
 
 .hero-section {
-  background-image: url('../public/assets/img/mande-network-1@2x-comp.png');
+  background-image: url('./public/assets/img/mande-network-1@2x-comp.png');
   object-fit: scale-down;
   background-size: cover;
 }
