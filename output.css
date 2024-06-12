@@ -781,6 +781,10 @@ video {
   width: 90%;
 }
 
+.w-\[98vw\] {
+  width: 98vw;
+}
+
 .w-\[99vw\] {
   width: 99vw;
 }
@@ -792,14 +796,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-\[98vw\] {
-  width: 98vw;
 }
 
 .max-w-\[281px\] {

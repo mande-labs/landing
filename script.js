@@ -24,14 +24,6 @@ document.querySelectorAll('.dropdown').forEach((dropdown) => {
     dropdown.querySelector('.itemText img').classList.toggle('rotate-180');
   });
 });
-document.getElementById('menu-toggle').onclick = function () {
-  var menu = document.getElementById('menu');
-  if (menu.classList.contains('hidden')) {
-    menu.classList.remove('hidden');
-  } else {
-    menu.classList.add('hidden');
-  }
-};
 
 function toggleMenu(id) {
   var item = document.getElementById(id);
