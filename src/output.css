@@ -653,6 +653,10 @@ video {
   margin-bottom: 8px;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -790,6 +794,14 @@ video {
   width: 100vw;
 }
 
+.w-\[99vw\] {
+  width: 99vw;
+}
+
+.w-\[90vw\] {
+  width: 90vw;
+}
+
 .max-w-\[281px\] {
   max-width: 281px;
 }
@@ -817,6 +829,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize {
+  resize: both;
 }
 
 .flex-row {
@@ -947,10 +963,6 @@ video {
 
 .border-\[1px\] {
   border-width: 1px;
-}
-
-.border-b-2 {
-  border-bottom-width: 2px;
 }
 
 .border-b-\[1px\] {
@@ -1140,10 +1152,6 @@ video {
 
 .pl-4 {
   padding-left: 1rem;
-}
-
-.pr-10 {
-  padding-right: 2.5rem;
 }
 
 .pr-4 {
@@ -1425,8 +1433,31 @@ video {
   --text-accent: #274cbf;
 }
 
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(179, 193, 222, 0.5),
+      0 0 10px rgba(179, 193, 222, 0.5), 0 0 15px rgba(179, 193, 222, 0.5),
+      0 0 20px rgba(179, 193, 222, 0.5), 0 0 25px rgba(179, 193, 222, 0.5),
+      0 0 30px rgba(179, 193, 222, 0.5), 0 0 35px rgba(179, 193, 222, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 10px rgba(39, 76, 191, 0.5), 0 0 20px rgba(39, 76, 191, 0.5),
+      0 0 30px rgba(39, 76, 191, 0.5), 0 0 40px rgba(39, 76, 191, 0.5),
+      0 0 50px rgba(39, 76, 191, 0.5), 0 0 60px rgba(39, 76, 191, 0.5),
+      0 0 70px rgba(39, 76, 191, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 5px rgba(179, 193, 222, 0.5),
+      0 0 10px rgba(179, 193, 222, 0.5), 0 0 15px rgba(179, 193, 222, 0.5),
+      0 0 20px rgba(179, 193, 222, 0.5), 0 0 25px rgba(179, 193, 222, 0.5),
+      0 0 30px rgba(179, 193, 222, 0.5), 0 0 35px rgba(179, 193, 222, 0.5);
+  }
+}
+
 .hero-section {
-  background-image: url('../public/assets/img/mande-network-1@2x.png');
+  background-image: url('../public/assets/img/mande-network-1@2x-comp.png');
   -o-object-fit: scale-down;
      object-fit: scale-down;
   background-size: cover;
@@ -1441,7 +1472,8 @@ video {
   gap: 10px;
   border-radius: 6px;
   border: 1px solid;
-  opacity: 0px;
+  opacity: 1;
+  /* Set initial opacity to 1 */
   background: radial-gradient(
       39.66% 50% at 50% 100%,
       #b3c1de 0%,
@@ -1456,6 +1488,37 @@ video {
   font-family: 'Sora';
   font-weight: 600;
   font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(134, 167, 233, 0.6) 0px 8px 70px 4px;
+}
+
+.primary-btn:hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 18px;
+  gap: 10px;
+  border-radius: 6px;
+  border: 1px solid;
+  opacity: 1;
+  background: radial-gradient(
+      90.66% 50% at 80% 100%,
+      #b3c1de 30%,
+      rgba(179, 193, 222, 0.5) 100%
+    ),
+    linear-gradient(0deg, var(--text-accent), var(--text-accent));
+  border-image-source: radial-gradient(
+    129.25% 1120.52% at 11.08% 100%,
+    #b3c1de 0%,
+    rgba(179, 193, 222, 0) 100%
+  );
+  font-family: 'Sora';
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  /* box-shadow: 0 20px 20px rgba(134, 167, 233, 0.6); */
+  box-shadow: rgba(134, 167, 233, 0.6) 0px 22px 70px 4px;
 }
 
 .secondary-btn {
@@ -1469,6 +1532,10 @@ video {
   font-weight: 600;
   font-size: 16px;
   color: var(--secondary-color);
+}
+
+.secondary-btn:hover {
+  box-shadow: 0 0 20px rgba(179, 193, 222, 0.6);
 }
 
 .dropdown-content,
@@ -1545,12 +1612,6 @@ video {
   transform: translateX(0);
 }
 
-.hover\:scale-105:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
   color: rgb(179 192 222 / var(--tw-text-opacity));
@@ -1564,6 +1625,20 @@ video {
 .group:hover .group-hover\:rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:rotate-45 {
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:duration-500 {
+  transition-duration: 500ms;
 }
 
 @media (min-width: 768px) {
