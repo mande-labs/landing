@@ -793,10 +793,6 @@ video {
   width: 98vw;
 }
 
-.w-\[99vw\] {
-  width: 99vw;
-}
-
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
