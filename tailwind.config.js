@@ -30,14 +30,7 @@ module.exports = {
         'card-bold-text-radial':
           'radial-gradient(4399.18% 92.62% at 0% 50%, #FFF 65.5%, rgba(179, 193, 222, 0.80) 89.5%)',
         'community-card-gradient': `
-          linear-gradient(to bottom right, rgba(179, 192, 222, 0.01) 0%, rgba(179, 192, 222, 0.00) 50%) bottom right / 50% 50% no-repeat,
-          linear-gradient(to bottom left, rgba(179, 192, 222, 0.01) 0%, rgba(179, 192, 222, 0.00) 50%) bottom left / 50% 50% no-repeat,
-          linear-gradient(to top left, rgba(179, 192, 222, 0.01) 0%, rgba(179, 192, 222, 0.00) 50%) top left / 50% 50% no-repeat,
-          linear-gradient(to top right, rgba(179, 192, 222, 0.01) 0%, rgba(179, 192, 222, 0.00) 50%) top right / 50% 50% no-repeat,
-          linear-gradient(to bottom right, rgba(179, 193, 222, 0.08) 0%, rgba(179, 193, 222, 0.06) 50%) bottom right / 50% 50% no-repeat,
-          linear-gradient(to bottom left, rgba(179, 193, 222, 0.08) 0%, rgba(179, 193, 222, 0.06) 50%) bottom left / 50% 50% no-repeat,
-          linear-gradient(to top left, rgba(179, 193, 222, 0.08) 0%, rgba(179, 193, 222, 0.06) 50%) top left / 50% 50% no-repeat,
-          linear-gradient(to top right, rgba(179, 193, 222, 0.08) 0%, rgba(179, 193, 222, 0.06) 50%) top right / 50% 50% no-repeat
+          linear-gradient(to bottom right, rgba(179, 193, 222, 0.15) 0%, rgba(0, 12, 27, 0.00) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, rgba(179, 193, 222, 0.15) 0%, rgba(0, 12, 27, 0.00) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, rgba(179, 193, 222, 0.15) 0%, rgba(0, 12, 27, 0.00) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, rgba(179, 193, 222, 0.15) 0%, rgba(0, 12, 27, 0.00) 50%) top right / 50% 50% no-repeat;
         
         `,
       },
@@ -54,6 +47,17 @@ module.exports = {
       textFillColor: {
         transparent: 'transparent',
       },
+    },
+    screens: {
+      sm: '640px',
+
+      md: '820px',
+
+      lg: '1024px',
+
+      xl: '1280px',
+
+      '2xl': '1536px',
     },
   },
   plugins: [],

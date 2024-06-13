@@ -37,16 +37,20 @@ function toggleMenu(id) {
     arrow.classList.remove('rotate-180');
   }
 }
-
 document.addEventListener('DOMContentLoaded', function () {
   const container = document.querySelector('.community-cards-container');
   const nextBtn = document.getElementById('next-btn');
   const prevBtn = document.getElementById('prev-btn');
 
   let scrollAmount = 0;
-  const scrollStep = 300;
+
+  function updateScrollStep() {
+    const containerWidth = container.clientWidth * 1.05;
+    return containerWidth;
+  }
 
   nextBtn.addEventListener('click', function () {
+    const scrollStep = updateScrollStep();
     scrollAmount += scrollStep;
     container.scrollTo({
       left: scrollAmount,
@@ -55,12 +59,17 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   prevBtn.addEventListener('click', function () {
+    const scrollStep = updateScrollStep();
     scrollAmount -= scrollStep;
     if (scrollAmount < 0) scrollAmount = 0;
     container.scrollTo({
       left: scrollAmount,
       behavior: 'smooth',
     });
+  });
+
+  window.addEventListener('resize', function () {
+    scrollAmount = container.scrollLeft;
   });
 });
 
@@ -70,9 +79,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const prevBtn = document.getElementById('prev-btn-team');
 
   let scrollAmount = 0;
-  const scrollStep = 340;
 
   nextBtn.addEventListener('click', function () {
+    const scrollStep = window.innerWidth * 0.98;
     scrollAmount += scrollStep;
     container.scrollTo({
       left: scrollAmount,
@@ -81,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   prevBtn.addEventListener('click', function () {
+    const scrollStep = window.innerWidth * 0.98;
     scrollAmount -= scrollStep;
     if (scrollAmount < 0) scrollAmount = 0;
     container.scrollTo({
