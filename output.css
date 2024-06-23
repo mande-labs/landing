@@ -673,6 +673,10 @@ video {
   margin-top: 4px;
 }
 
+.mt-\[150px\] {
+  margin-top: 150px;
+}
+
 .block {
   display: block;
 }
@@ -763,10 +767,6 @@ video {
 
 .w-\[100px\] {
   width: 100px;
-}
-
-.w-\[40\%\] {
-  width: 40%;
 }
 
 .w-\[50\%\] {
@@ -899,6 +899,14 @@ video {
   gap: 2px;
 }
 
+.gap-\[20px\] {
+  gap: 20px;
+}
+
+.gap-\[150px\] {
+  gap: 150px;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1013,6 +1021,10 @@ video {
   --tw-border-opacity: 0.5;
 }
 
+.border-opacity-30 {
+  --tw-border-opacity: 0.3;
+}
+
 .bg-\[\#04154D\] {
   --tw-bg-opacity: 1;
   background-color: rgb(4 21 77 / var(--tw-bg-opacity));
@@ -1039,11 +1051,6 @@ video {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-clip-text {
-  -webkit-background-clip: text;
-          background-clip: text;
 }
 
 .bg-center {
@@ -1375,6 +1382,13 @@ video {
           backdrop-filter: blur(35px);
 }
 
+.text-gradient-mande {
+  background: linear-gradient(180deg, #fff 65.5%, #b3c1de 89.5%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .no-scrollbar {
   -ms-overflow-style: none;
   /* IE and Edge */
@@ -1404,6 +1418,7 @@ video {
   --primary-color: #04154d;
   --secondary-color: #b3c0de;
   --text-accent: #274cbf;
+  --text-gradient: #fff;
 }
 
 @keyframes glow {
@@ -1615,12 +1630,67 @@ video {
 }
 
 @media (min-width: 820px) {
+  .md\:my-\[290px\] {
+    margin-top: 290px;
+    margin-bottom: 290px;
+  }
+
+  .md\:my-\[250px\] {
+    margin-top: 250px;
+    margin-bottom: 250px;
+  }
+
+  .md\:my-\[150px\] {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
   .md\:mb-16 {
     margin-bottom: 4rem;
   }
 
   .md\:mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .md\:mt-\[290px\] {
+    margin-top: 290px;
+  }
+
+  .md\:mb-\[290px\] {
+    margin-bottom: 290px;
+  }
+
+  .md\:mt-\[210px\] {
+    margin-top: 210px;
+  }
+
+  .md\:mt-\[180px\] {
+    margin-top: 180px;
+  }
+
+  .md\:mb-\[210px\] {
+    margin-bottom: 210px;
+  }
+
+  .md\:mt-\[150px\] {
+    margin-top: 150px;
+  }
+
+  .md\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
+  .md\:mb-\[82px\] {
+    margin-bottom: 82px;
+  }
+
+  .md\:mb-\[62px\] {
+    margin-bottom: 62px;
+  }
+
+  .md\:mb-\[150px\] {
+    margin-bottom: 150px;
   }
 
   .md\:block {
@@ -1731,8 +1801,8 @@ video {
     gap: 4rem;
   }
 
-  .md\:gap-20 {
-    gap: 5rem;
+  .md\:gap-2 {
+    gap: 0.5rem;
   }
 
   .md\:gap-8 {

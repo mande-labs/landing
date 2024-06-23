@@ -18,6 +18,7 @@
   --primary-color: #04154d;
   --secondary-color: #b3c0de;
   --text-accent: #274cbf;
+  --text-gradient: #fff;
 }
 @keyframes glow {
   0% {
@@ -226,6 +227,13 @@
         top right / 50% 50% no-repeat;
 
     backdrop-filter: blur(35px);
+  }
+  .text-gradient-mande {
+    background: linear-gradient(180deg, #fff 65.5%, #b3c1de 89.5%);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
