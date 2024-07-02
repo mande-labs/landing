@@ -673,10 +673,6 @@ video {
   margin-top: 4px;
 }
 
-.mt-\[150px\] {
-  margin-top: 150px;
-}
-
 .block {
   display: block;
 }
@@ -887,8 +883,12 @@ video {
   gap: 2rem;
 }
 
-.gap-\[100px\] {
-  gap: 100px;
+.gap-\[150px\] {
+  gap: 150px;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
 }
 
 .gap-\[28px\] {
@@ -897,14 +897,6 @@ video {
 
 .gap-\[2px\] {
   gap: 2px;
-}
-
-.gap-\[20px\] {
-  gap: 20px;
-}
-
-.gap-\[150px\] {
-  gap: 150px;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1013,16 +1005,12 @@ video {
   --tw-border-opacity: 0.2;
 }
 
-.border-opacity-40 {
-  --tw-border-opacity: 0.4;
+.border-opacity-30 {
+  --tw-border-opacity: 0.3;
 }
 
 .border-opacity-50 {
   --tw-border-opacity: 0.5;
-}
-
-.border-opacity-30 {
-  --tw-border-opacity: 0.3;
 }
 
 .bg-\[\#04154D\] {
@@ -1382,6 +1370,16 @@ video {
           backdrop-filter: blur(35px);
 }
 
+.bg-communinty-card-gradient {
+  background: linear-gradient(
+      180deg,
+      rgba(179, 193, 222, 0.08) 0%,
+      rgba(0, 12, 27, 0) 100%
+    );
+  -webkit-backdrop-filter: blur(35px);
+          backdrop-filter: blur(35px);
+}
+
 .text-gradient-mande {
   background: linear-gradient(180deg, #fff 65.5%, #b3c1de 89.5%);
   background-clip: text;
@@ -1630,21 +1628,6 @@ video {
 }
 
 @media (min-width: 820px) {
-  .md\:my-\[290px\] {
-    margin-top: 290px;
-    margin-bottom: 290px;
-  }
-
-  .md\:my-\[250px\] {
-    margin-top: 250px;
-    margin-bottom: 250px;
-  }
-
-  .md\:my-\[150px\] {
-    margin-top: 150px;
-    margin-bottom: 150px;
-  }
-
   .md\:mb-16 {
     margin-bottom: 4rem;
   }
@@ -1653,44 +1636,28 @@ video {
     margin-bottom: 1.5rem;
   }
 
-  .md\:mt-\[290px\] {
-    margin-top: 290px;
-  }
-
-  .md\:mb-\[290px\] {
-    margin-bottom: 290px;
-  }
-
-  .md\:mt-\[210px\] {
-    margin-top: 210px;
-  }
-
-  .md\:mt-\[180px\] {
-    margin-top: 180px;
+  .md\:mb-\[150px\] {
+    margin-bottom: 150px;
   }
 
   .md\:mb-\[210px\] {
     margin-bottom: 210px;
   }
 
-  .md\:mt-\[150px\] {
-    margin-top: 150px;
+  .md\:mb-\[62px\] {
+    margin-bottom: 62px;
   }
 
   .md\:mt-\[100px\] {
     margin-top: 100px;
   }
 
-  .md\:mb-\[82px\] {
-    margin-bottom: 82px;
+  .md\:mt-\[150px\] {
+    margin-top: 150px;
   }
 
-  .md\:mb-\[62px\] {
-    margin-bottom: 62px;
-  }
-
-  .md\:mb-\[150px\] {
-    margin-bottom: 150px;
+  .md\:mt-\[180px\] {
+    margin-top: 180px;
   }
 
   .md\:block {

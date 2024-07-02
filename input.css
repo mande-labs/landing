@@ -202,29 +202,10 @@
   }
   .bg-communinty-card-gradient {
     background: linear-gradient(
-          to bottom right,
-          rgba(179, 193, 222, 0.15) 0%,
-          rgba(0, 12, 27, 0) 50%
-        )
-        bottom right / 50% 50% no-repeat,
-      linear-gradient(
-          to bottom left,
-          rgba(179, 193, 222, 0.15) 0%,
-          rgba(0, 12, 27, 0) 50%
-        )
-        bottom left / 50% 50% no-repeat,
-      linear-gradient(
-          to top left,
-          rgba(179, 193, 222, 0.15) 0%,
-          rgba(0, 12, 27, 0) 50%
-        )
-        top left / 50% 50% no-repeat,
-      linear-gradient(
-          to top right,
-          rgba(179, 193, 222, 0.15) 0%,
-          rgba(0, 12, 27, 0) 50%
-        )
-        top right / 50% 50% no-repeat;
+      180deg,
+      rgba(179, 193, 222, 0.08) 0%,
+      rgba(0, 12, 27, 0) 100%
+    );
 
     backdrop-filter: blur(35px);
   }
