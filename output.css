@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -765,10 +765,6 @@ video {
   width: 100px;
 }
 
-.w-\[40\%\] {
-  width: 40%;
-}
-
 .w-\[50\%\] {
   width: 50%;
 }
@@ -887,8 +883,12 @@ video {
   gap: 2rem;
 }
 
-.gap-\[100px\] {
-  gap: 100px;
+.gap-\[150px\] {
+  gap: 150px;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
 }
 
 .gap-\[28px\] {
@@ -1005,8 +1005,8 @@ video {
   --tw-border-opacity: 0.2;
 }
 
-.border-opacity-40 {
-  --tw-border-opacity: 0.4;
+.border-opacity-30 {
+  --tw-border-opacity: 0.3;
 }
 
 .border-opacity-50 {
@@ -1039,11 +1039,6 @@ video {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-clip-text {
-  -webkit-background-clip: text;
-          background-clip: text;
 }
 
 .bg-center {
@@ -1289,27 +1284,12 @@ video {
   text-decoration-line: underline;
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
 .opacity-30 {
   opacity: 0.3;
 }
 
 .opacity-40 {
   opacity: 0.4;
-}
-
-.shadow-\[inset_-12px_-8px_40px_\#46464620\] {
-  --tw-shadow: inset -12px -8px 40px #46464620;
-  --tw-shadow-colored: inset -12px -8px 40px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-gray-800 {
-  --tw-shadow-color: #1f2937;
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .blur {
@@ -1320,12 +1300,6 @@ video {
 .blur-\[225\.9px\] {
   --tw-blur: blur(225.9px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.backdrop-blur-2xl {
-  --tw-backdrop-blur: blur(40px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition {
@@ -1375,6 +1349,23 @@ video {
           backdrop-filter: blur(35px);
 }
 
+.bg-communinty-card-gradient {
+  background: linear-gradient(
+      180deg,
+      rgba(179, 193, 222, 0.08) 0%,
+      rgba(0, 12, 27, 0) 100%
+    );
+  -webkit-backdrop-filter: blur(35px);
+          backdrop-filter: blur(35px);
+}
+
+.text-gradient-mande {
+  background: linear-gradient(180deg, #fff 65.5%, #b3c1de 89.5%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .no-scrollbar {
   -ms-overflow-style: none;
   /* IE and Edge */
@@ -1404,6 +1395,7 @@ video {
   --primary-color: #04154d;
   --secondary-color: #b3c0de;
   --text-accent: #274cbf;
+  --text-gradient: #fff;
 }
 
 @keyframes glow {
@@ -1623,6 +1615,30 @@ video {
     margin-bottom: 1.5rem;
   }
 
+  .md\:mb-\[150px\] {
+    margin-bottom: 150px;
+  }
+
+  .md\:mb-\[210px\] {
+    margin-bottom: 210px;
+  }
+
+  .md\:mb-\[62px\] {
+    margin-bottom: 62px;
+  }
+
+  .md\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
+  .md\:mt-\[150px\] {
+    margin-top: 150px;
+  }
+
+  .md\:mt-\[180px\] {
+    margin-top: 180px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1731,8 +1747,8 @@ video {
     gap: 4rem;
   }
 
-  .md\:gap-20 {
-    gap: 5rem;
+  .md\:gap-2 {
+    gap: 0.5rem;
   }
 
   .md\:gap-8 {
